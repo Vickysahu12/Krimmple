@@ -24,7 +24,7 @@ export function CategoryTiles() {
           <li key={c.id} data-reveal style={{ '--reveal-delay': `${i * 60}ms` }}>
             <Link to={c.to} className="group block">
               <span className="block overflow-hidden bg-sand">
-                <Img id={c.image} alt="" className="aspect-[4/5]" position="50% 20%" imgClassName="transition-transform duration-[1200ms] ease-[var(--ease-out)] group-hover:scale-[1.06]" />
+                <Img id={c.image} alt="" className="aspect-[4/5]" position="50% 10%" imgClassName="transition-transform duration-[1200ms] ease-[var(--ease-out)] group-hover:scale-[1.06]" />
               </span>
               <span className="mt-3 flex items-baseline justify-between gap-2">
                 <span className="text-[14px] text-ink transition-colors group-hover:text-red">{c.label}</span>
@@ -48,9 +48,9 @@ export function FamilyCards() {
           <li key={c.id} data-reveal-frame style={{ '--reveal-delay': `${i * 90}ms` }}>
             <Link to={c.to} className="group relative isolate block aspect-[4/5] overflow-hidden bg-sand sm:aspect-[3/4.2]">
               {c.editorial ? (
-                <img src={editorial(c.image)} alt="" loading="lazy" className="absolute inset-0 -z-10 h-full w-full object-cover object-[50%_20%] transition-transform duration-[1400ms] ease-[var(--ease-out)] group-hover:scale-[1.05]" />
+                <img src={editorial(c.image)} alt="" loading="lazy" className="absolute inset-0 -z-10 h-full w-full object-cover object-[50%_6%] transition-transform duration-[1400ms] ease-[var(--ease-out)] group-hover:scale-[1.05]" />
               ) : (
-                <Img id={c.image} alt="" className="absolute! inset-0 -z-10" position="50% 18%" imgClassName="transition-transform duration-[1400ms] ease-[var(--ease-out)] group-hover:scale-[1.05]" />
+                <Img id={c.image} alt="" className="absolute! inset-0 -z-10" position="50% 8%" imgClassName="transition-transform duration-[1400ms] ease-[var(--ease-out)] group-hover:scale-[1.05]" />
               )}
               <span aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-t from-black/65 via-black/10 to-transparent" />
               <span className="absolute inset-x-6 bottom-6 text-white">

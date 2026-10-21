@@ -95,13 +95,6 @@ export const stories = [
   { date: '18 Sep 2026', tag: 'Men', title: 'Why linen is the only festive shirt you need', image: 'm16-1', to: '/shop/men-shirts' },
 ]
 
-export const instagram = {
-  handle: '@krimmple',
-  tag: '#KrimmpleFamily',
-  href: 'https://instagram.com',
-  images: ['w22-1', 'k02-1', 'm10-1', 'w09-1', 'k13-1', 'm16-1'],
-}
-
 export const offers = [
   { title: '10% off your first order', code: 'KRIMMPLE10' },
   { title: '10% off a family set of three', code: 'FAMILY10' },

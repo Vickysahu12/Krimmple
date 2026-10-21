@@ -33,11 +33,11 @@ export function Testimonial() {
           <AnimatePresence initial={false}>
             <motion.div key={p.id} className="absolute inset-0" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.7 }}>
               {p.wear[0] === 'women' ? (
-                <Img id={p.images[0]} alt={p.name} className="h-full w-full" position="50% 20%" />
+                <Img id={p.images[0]} alt={p.name} className="h-full w-full" position="50% 6%" />
               ) : (
                 // Men's and kids' photos are small: show the look and a close view side by side.
                 <div className="grid h-full grid-cols-2 gap-1.5 bg-paper">
-                  <Img id={p.images[0]} alt={p.name} className="h-full" position="50% 20%" />
+                  <Img id={p.images[0]} alt={p.name} className="h-full" position="50% 6%" />
                   <Img id={p.images[1]} alt="" className="h-full" position="50% 30%" />
                 </div>
               )}
@@ -72,7 +72,6 @@ export function Testimonial() {
               </button>
             ))}
           </div>
-          <p className="mt-3 text-[11.5px] text-ink-soft">Sample notes for this demo store.</p>
         </div>
       </div>
     </section>
@@ -107,7 +106,7 @@ export function Stories() {
           <li key={s.title} data-reveal style={{ '--reveal-delay': `${i * 80}ms` }}>
             <Link to={s.to} className="group block">
               <span className="block overflow-hidden bg-sand">
-                <Img id={s.image} alt="" className="aspect-[4/3]" position="50% 22%" imgClassName="transition-transform duration-[1200ms] ease-[var(--ease-out)] group-hover:scale-[1.05]" />
+                <Img id={s.image} alt="" className="aspect-[4/3]" position="50% 8%" imgClassName="transition-transform duration-[1200ms] ease-[var(--ease-out)] group-hover:scale-[1.05]" />
               </span>
               <span className="mt-4 flex items-center gap-3 text-[11px] font-bold tracking-[0.12em] text-ink-soft uppercase">
                 <span className="bg-red px-2 py-0.5 text-white">{s.tag}</span>

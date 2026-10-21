@@ -177,7 +177,7 @@ export function FamilySet() {
                 src={editorial(set.women)}
                 alt={pieces.women.name}
                 loading="lazy"
-                className={cn('absolute inset-y-0 left-0 h-full w-[68%] object-cover object-[50%_20%] transition-[filter,opacity] duration-500', focus && focus !== 'women' && 'opacity-60 saturate-50')}
+                className={cn('absolute inset-y-0 left-0 h-full w-[68%] object-cover object-[50%_6%] transition-[filter,opacity] duration-500', focus && focus !== 'women' && 'opacity-60 saturate-50')}
               />
               {[
                 ['men', 'right-4 top-6 w-[40%] sm:right-6 sm:top-8'],

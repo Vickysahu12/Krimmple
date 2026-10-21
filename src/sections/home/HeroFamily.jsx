@@ -56,7 +56,7 @@ export function HeroFamily() {
                     animate={{ scale: 1 }}
                     transition={{ duration: 1.6, delay: k * 0.08, ease: EASE }}
                   >
-                    <Img id={img} alt="" priority className="absolute! inset-0" position="50% 18%" />
+                    <Img id={img} alt="" priority className="absolute! inset-0" position="50% 6%" />
                   </motion.div>
                 ) : (
                   <motion.img
@@ -65,7 +65,7 @@ export function HeroFamily() {
                     alt=""
                     fetchPriority="high"
                     draggable={false}
-                    className="absolute inset-0 h-full w-full object-cover object-[50%_22%]"
+                    className="absolute inset-0 h-full w-full object-cover object-[50%_4%]"
                     initial={reduce ? false : { scale: 1.08 }}
                     animate={{ scale: 1 }}
                     transition={{ duration: 1.8, ease: EASE }}
